@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ola Waked Portfolio</title>
+  <!-- Google Font: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- AOS Animation Library CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav id="navbar" data-aos="fade-down">
+    <div class="logo">Personal Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#tech">Tech Stack</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <!-- Mobile hamburger menu -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Home Section with Background Image -->
+  <section id="home" class="section home-section" data-aos="fade-up">
+    <div class="overlay"></div>
+    <div class="hero">
+      <h1 id="typed-hero"></h1>
+      <p>content creator • business owner • passionate developer</p>
+      <a href="#education" class="btn">More About Me</a>
+    </div>
+  </section>
+
+  <!-- Education Section using edu.jpg as background -->
+  <section id="education" class="section edu-section" data-aos="fade-up">
+    <div class="overlay-edu"></div>
+    <div class="container small-container edu-container">
+      <h2>Education</h2>
+      <div class="edu-card">
+        <div class="edu-info">
+          <h3>University of Western Ontario</h3>
+          <p>
+            Honors Specialization in Computer Science, Minor in Software Engineering<br>
+            (Class of 2026)
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section gradient-exp" data-aos="fade-up">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="card">
+        <h3>MSA Hackathon Second Place Winner 2025</h3>
+        <p>
+          Co-developed <em>Khushu</em> – an app to enhance focus during Islamic prayer. Integrated EEG monitoring via a Muse headband and a GPT‑4 AI assistant.
+        </p>
+      </div>
+      <div class="card">
+        <h3>SheHacks+ Participant 2024</h3>
+        <p>
+          Co-developed <em>WayFinder</em>, a campus safety app powered by AI.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Executive Director of Graphic Design 2023–2024</h3>
+        <p>
+          Boosted digital engagement by 30% at Western Women in Leadership.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Research Member 2023</h3>
+        <p>
+          Contributed to research on the Google PageRank Algorithm using Java.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section gradient-proj" data-aos="fade-up">
+    <div class="container">
+      <h2>Projects</h2>
+
+      <!-- Project Card: Face Detection -->
+      <div class="project-card" data-aos="fade-up">
+        <h3>
+          <a href="https://github.com/OlaWak/FaceDetectionAttendance" target="_blank">
+            Face Detection and Real-Time Attendance System
+          </a>
+        </h3>
+        <ul class="tech-details">
+          <li>Python</li>
+          <li>MySQL</li>
+          <li>OpenCV</li>
+        </ul>
+        <div class="project-gallery">
+          <img src="img/facereco1.png" alt="Face Recog 1">
+          <img src="img/facereco2.png" alt="Face Recog 2">
+          <img src="img/facereco3.png" alt="Face Recog 3">
+          <img src="img/facereco4.png" alt="Face Recog 4">
+        </div>
+      </div>
+
+      <!-- Project Card: Cashier Challenge -->
+      <div class="project-card" data-aos="fade-up">
+        <h3>
+          <a href="https://github.com/OlaWak/CashierChallenge" target="_blank">
+            Cashier Challenge
+          </a>
+        </h3>
+        <ul class="tech-details">
+          <li>Java</li>
+        </ul>
+        <div class="project-gallery">
+          <video controls>
+            <source src="vid/CashierChallenge.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <!-- Project Card: Clinic Management -->
+      <div class="project-card" data-aos="fade-up">
+        <h3>
+          <a href="https://github.com/OlaWak/ClinicManagement" target="_blank">
+            Clinic Management System Website
+          </a>
+        </h3>
+        <ul class="tech-details">
+          <li>PHP</li>
+          <li>MySQL</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+        </ul>
+        <div class="project-gallery">
+          <img src="img/clinic1.png" alt="Clinic 1">
+          <img src="img/clinic2.png" alt="Clinic 2">
+          <img src="img/clinic3.png" alt="Clinic 3">
+          <img src="img/clinic4.png" alt="Clinic 4">
+          <img src="img/clinic5.png" alt="Clinic 5">
+        </div>
+      </div>
+
+      <!-- Project Card: Khushu -->
+      <div class="project-card" data-aos="fade-up">
+        <h3>
+          <a href="https://github.com/shehrina/Khushu" target="_blank">
+            Khushu
+          </a>
+        </h3>
+        <ul class="tech-details">
+          <li>Python</li>
+          <li>CSS3</li>
+          <li>HTML5</li>
+          <li>JavaScript</li>
+          <li>Chat-GPT 4 API</li>
+          <li>Flask</li>
+          <li>Chart.js</li>
+        </ul>
+        <div class="project-gallery">
+          <img src="img/Khushu1.png" alt="Khushu 1">
+          <img src="img/Khushu2.png" alt="Khushu 2">
+          <img src="img/Khushu3.png" alt="Khushu 3">
+          <img src="img/Khushu4.png" alt="Khushu 4">
+          <img src="img/Khushu5.png" alt="Khushu 5">
+          <img src="img/Khushu6.png" alt="Khushu 6">
+        </div>
+      </div>
+
+      <!-- Project Card: Talk to the Hand -->
+      <div class="project-card" data-aos="fade-up">
+        <h3>
+          <a href="https://github.com/OlaWak/talk-to-the-hand" target="_blank">
+            Talk to the Hand
+          </a>
+        </h3>
+        <ul class="tech-details">
+          <li>Python</li>
+          <li>OpenCV</li>
+          <li>TensorFlow</li>
+        </ul>
+        <div class="project-gallery">
+          <video controls>
+            <source src="vid/TalkToTheHand.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+      <!-- Project Card: WayFinder -->
+      <div class="project-card" data-aos="fade-up">
+        <h3>
+          <a href="https://github.com/OlaWak/WayFinder" target="_blank">
+            WayFinder
+          </a>
+        </h3>
+        <ul class="tech-details">
+          <li>React Native</li>
+          <li>Chat-GPT 4 API</li>
+          <li>JavaScript</li>
+        </ul>
+        <div class="project-gallery">
+          <video class="small-video" controls>
+            <source src="vid/WayFinder.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section id="tech" class="section gradient-tech" data-aos="fade-up">
+    <div class="container">
+      <h2>Tech Stack</h2>
+      <div class="badges">
+        <img src="https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white" alt="LaTeX" />
+        <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
+        <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" />
+        <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
+        <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript" />
+        <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+        <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+        <img src="https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37" alt="Expo" />
+        <img src="https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React Native" />
+        <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+        <img src="https://img.shields.io/badge/adobe-%23FF0000.svg?style=for-the-badge&logo=adobe&logoColor=white" alt="Adobe" />
+        <img src="https://img.shields.io/badge/Adobe%20Creative%20Cloud-DA1F26.svg?style=for-the-badge&logo=Adobe%20Creative%20Cloud&logoColor=white" alt="Adobe Creative Cloud" />
+        <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" />
+        <img src="https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white" alt="Canva" />
+        <img src="https://img.shields.io/badge/Inkscape-e0e0e0?style=for-the-badge&logo=inkscape&logoColor=080A13" alt="Inkscape" />
+        <img src="https://img.shields.io/badge/adobe%20illustrator-%23FF9A00.svg?style=for-the-badge&logo=adobe%20illustrator&logoColor=white" alt="Adobe Illustrator" />
+        <img src="https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=white" alt="Adobe Photoshop" />
+        <img src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
+        <img src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section" data-aos="fade-up">
+    <div class="container contact-container">
+      <h2>Contact & Social</h2>
+      <div class="contact-links">
+        <a href="https://github.com/OlaWak/OlaWak" target="_blank" class="btn">GitHub</a>
+        <a href="https://www.linkedin.com/feed/" target="_blank" class="btn">LinkedIn</a>
+        <a href="https://www.instagram.com/itsollaaa" target="_blank" class="btn">Instagram</a>
+        <a href="https://deenset.etsy.com" target="_blank" class="btn">My Business</a>
+      </div>
+    </div>
+  </section>
+
+  <footer data-aos="fade-up">
+    <p>&copy; 2025 Ola Waked. All Rights Reserved.</p>
+  </footer>
+
+  <!-- AOS Animation Library JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
